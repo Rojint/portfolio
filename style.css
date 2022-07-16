@@ -87,8 +87,13 @@ a {
 span: hover {
 
   color: #ED4465;
+  transition: all .5s;
 
 
+}
+
+span.name {
+  color: #ed5565;
 }
 
 
@@ -100,4 +105,44 @@ Span .m-left {
 
 .text p {
   letter-spacing: 3px;
+}
+
+
+.text p {
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  font-size: .8rem;
+
+}
+
+
+.text a{
+  padding: 12px 25px;
+  background-color: none;
+  border: 3px solid #ed5565;
+  color: #ed5565;
+  font-size: .8rem;
+  position: relative;
+  top: 80px;
+  overflow: hidden;
+  transition: .5s;
+  display: inline-block;
+
+
+}
+
+.text a:hover{
+  color: #fff;
+}
+
+.text a::before{
+  content: "";
+  background-color: #ed5565;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: .5s;
 }
